@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakesh Babu Gajula - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .custom-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background-color: #00abf0;
+            border-radius: 50%;
+            pointer-events: none;
+            mix-blend-mode: difference;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease;
+        }
+        .cursor-follower {
+            position: fixed;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #00abf0;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9998;
+            transform: translate(-50%, -50%);
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header Design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio<span class="animate" style="--i:1;"></span></a>
+        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+            <span class="active-nav"></span>
+            <span class="animate" style="--i:2;"></span>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span class="name">Rakesh Babu Gajula</span><span class="animate" style="--i:2;"></span></h1>
+            <div class="text-animate">
+                <h3>Full Stack Dev</h3>
+                <span class="animate" style="--i:3;"></span>
+            </div>
+            <p>I build seamless web experiences from frontend to backend with modern technologies.
+            Passionate about creating efficient, scalable solutions that solve real-world problems.
+                <span class="animate" style="--i:4;"></span>
+            </p>
+            <div class="btn-box">
+                <a href="mailto:grakesh2605@gmail.com" class="btn">Hire Me</a>
+                <a href="https://wa.me/+9014545319" class="btn" target="_blank">Let's Talk</a>
+                <span class="animate" style="--i:5;"></span>
+            </div>
+        </div>
+
+        <!-- Profile Image Circle -->
+        <div class="profile-container">
+            <div class="glow-ring">
+                <img src="profile.jpg" alt="Rakesh Babu Gajula">
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://www.linkedin.com/in/rakesh-babu-gajula/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/GajulaRakeshBabu" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/bunny__gajula?utm_source=qr&igsh=aGx2dTNxaW82a2Np" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <span class="animate" style="--i:6;"></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="profile-highlight">
+            <div class="glow-container">
+                <img src="about.jpg" alt="Rakesh Babu Gajula" class="profile-image">
+            </div>
+            <div class="about-content">
+                <h2>About <span>Me</span></h2>
+                <h3>Full Stack Developer</h3>
+                <p>I’m Gajula Rakesh Babu, a passionate and aspiring Computer Science and Engineering undergraduate from Guru Nanak Institutions, Hyderabad (Batch: 2027). I have a strong interest in Artificial Intelligence, Machine Learning, and Full-Stack Web Development.
+
+I’ve built impactful projects like a Fake News Detection System using NLP, a Generative AI Health Assistant with GPT-4, and a full-stack E-commerce platform. I’ve also gained practical experience through the Walmart Advanced Software Engineering Virtual Internship via Forage, where I worked on system architecture and logistics optimization using Java.
+
+Beyond academics, I actively participate in hackathons and have secured a Top 10 position in HackArena 2025. I continuously upskill through certifications from platforms like IBM, Google, and NPTEL, and I’m exploring open-source contributions on GitHub.
+
+I'm a problem-solver who loves learning and building things that create real-world impact.</p>
+                <div class="about-info">
+                    <div class="info-box">
+                        <i class='bx bxs-user'></i>
+                        <span>Rakesh Babu Gajula</span>
+                    </div>
+                    <div class="info-box">
+                        <i class='bx bxs-phone'></i>
+                        <span>+91 9014545319</span>
+                    </div>
+                    <div class="info-box">
+                        <i class='bx bxs-envelope'></i>
+                        <span>grakesh2605@gmail.com</span>
+                    </div>
+                    <div class="info-box">
+                        <i class='bx bxs-map'></i>
+                        <span>Hyderabad, India</span>
+                    </div>
+                </div>
+                <div class="btn-box btns">
+                    <a href="#contact" class="btn">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-title">
+            <h2>My <span>Skills</span></h2>
+        </div>
+        <div class="skills-container">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <div class="progress-info">
+                                <h3>HTML/CSS/JS</h3>
+                                <span class="percent">0%</span>
+                            </div>
+                            <div class="bar"><span class="html"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-info">
+                                <h3>Python</h3>
+                                <span class="percent">0%</span>
+                            </div>
+                            <div class="bar"><span class="css"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-info">
+                                <h3>Java</h3>
+                                <span class="percent">0%</span>
+                            </div>
+                            <div class="bar"><span class="javascript"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-info">
+                                <h3>C</h3>
+                                <span class="percent">0%</span>
+                            </div>
+                            <div class="bar"><span class="react"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Professional Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content circular">
+                        <div class="circular-progress">
+                            <div class="circle-progress" data-percent="85">
+                                <svg class="progress-ring" width="120" height="120">
+                                    <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                </svg>
+                                <div class="circle-info">
+                                    <span class="circle-percent">0%</span>
+                                    <h4>Web Development</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="circular-progress">
+                            <div class="circle-progress" data-percent="75">
+                                <svg class="progress-ring" width="120" height="120">
+                                    <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                </svg>
+                                <div class="circle-info">
+                                    <span class="circle-percent">0%</span>
+                                    <h4>UI/UX Design</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="circular-progress">
+                            <div class="circle-progress" data-percent="80">
+                                <svg class="progress-ring" width="120" height="120">
+                                    <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                </svg>
+                                <div class="circle-info">
+                                    <span class="circle-percent">0%</span>
+                                    <h4>Database Design</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="circular-progress">
+                            <div class="circle-progress" data-percent="90">
+                                <svg class="progress-ring" width="120" height="120">
+                                    <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                </svg>
+                                <div class="circle-info">
+                                    <span class="circle-percent">0%</span>
+                                    <h4>Problem Solving</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-title">
+            <h2>My <span>Projects</span></h2>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-left">
+                    <img src="ecommerce.jpg" alt="E-Commerce Platform">
+                </div>
+                <div class="project-right">
+                    <h3>
+                        <span class="highlight">E-Commerce Platform</span>
+                    </h3>
+                    <p class="description">
+                        A full-featured online shopping platform with user authentication, product catalog, shopping cart, and payment integration.
+                    </p>
+                    <h4>Features:</h4>
+                    <ul class="features-list">
+                        <li>User authentication and profile management</li>
+                        <li>Product catalog with advanced search</li>
+                        <li>Shopping cart and secure checkout</li>
+                        <li>Payment gateway integration</li>
+                        <li>Admin dashboard for inventory management</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Redux</span>
+                        <span>Stripe API</span>
+                    </div>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-left">
+                    <img src="fakenews.jpg" alt="Fake News Detection">
+                </div>
+                <div class="project-right">
+                    <h3>
+                        <span class="highlight">Fake News Detection System</span>
+                    </h3>
+                    <p class="description">
+                        AI-powered solution to identify misinformation using natural language processing and machine learning.
+                    </p>
+                    <h4>Features:</h4>
+                    <ul class="features-list">
+                        <li>Natural Language Processing for text analysis</li>
+                        <li>Machine learning classification model</li>
+                        <li>Real-time news verification</li>
+                        <li>Interactive dashboard with results visualization</li>
+                        <li>REST API for integration</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Flask</span>
+                        <span>NLTK</span>
+                        <span>React</span>
+                    </div>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="section-title">
+            <h2>My <span>Experience</span></h2>
+        </div>
+        <div class="experience-container">
+            <div class="experience-card">
+                <div class="experience-left">
+                    <img src="walmart.jpg" alt="Walmart Experience">
+                </div>
+                <div class="experience-right">
+                    <h3>
+                        <span class="highlight">Walmart USA</span> – Advanced Software Engineering Virtual Experience
+                    </h3>
+                    <p class="status">
+                        Platform: <strong>Forage</strong> | Completed: <strong>July 2025</strong>
+                    </p>
+                    <p>Completed a job simulation solving real-world engineering problems at Walmart.</p>
+                    
+                    <h4>Key Achievements:</h4>
+                    <ul class="achievements-list">
+                        <li>Built a custom heap data structure in Java for the shipping team</li>
+                        <li>Designed a UML class diagram for a multi-mode data processor</li>
+                        <li>Created an ER diagram for a pet department database system</li>
+                    </ul>
+                    
+                    <h4>Skills Gained:</h4>
+                    <div class="skills-tags">
+                        <span>Data Structures</span>
+                        <span>Software Architecture</span>
+                        <span>UML</span>
+                        <span>SQL</span>
+                        <span>Python</span>
+                        <span>Relational DB Design</span>
+                        <span>Data Munging</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="section-title">
+            <h2>My <span>Certifications</span></h2>
+        </div>
+        <div class="certificates-container">
+            <div class="certificate-card">
+                <div class="certificate-left">
+                    <img src="certificate1.jpg" alt="NPTEL Certification">
+                </div>
+                <div class="certificate-right">
+                    <h3>
+                        <span class="highlight">NPTEL Online Certification</span> – Programming in Java 
+                        <span class="highlight">(IIT Kharagpur, Jan–Apr 2025)</span>
+                    </h3>
+                    <p class="status">
+                        Achieved Elite status with a consolidated score of <strong>64%</strong>, scoring full marks 
+                        <strong>(25/25)</strong> in assignments.
+                    </p>
+                    <h4>Key Skills:</h4>
+                    <ul class="skills-list">
+                        <li>Core Java, OOP (Inheritance, Polymorphism)</li>
+                        <li>Exception Handling, Multithreading</li>
+                        <li>GUI (AWT & Swing), File I/O, Streams</li>
+                        <li>Networking, JDBC, Client–Server Apps</li>
+                        <li>Modular Design using Packages & Interfaces</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="certificate-card">
+                <div class="certificate-left">
+                    <img src="certificate2.jpg" alt="IBM Certification">
+                </div>
+                <div class="certificate-right">
+                    <h3>
+                        <span class="highlight">IBM</span> – Python for Data Science 
+                        <span class="highlight">(Cognitive Class)</span>
+                    </h3>
+                    <p class="status">
+                        Successfully completed the course covering Python essentials for data science applications.
+                    </p>
+                    <h4>Key Skills:</h4>
+                    <ul class="skills-list">
+                        <li>Python Basics: Syntax, variables, control flow</li>
+                        <li>Data Structures: Lists, tuples, dictionaries, sets</li>
+                        <li>Functions, loops, error handling</li>
+                        <li>File I/O, data cleaning & manipulation (Pandas)</li>
+                        <li>NumPy for numerical computing, basic API handling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="certificate-card">
+                <div class="certificate-left">
+                    <img src="certificate3.jpg" alt="TCS Certification">
+                </div>
+                <div class="certificate-right">
+                    <h3>
+                        <span class="highlight">TCS iON</span> – Career Edge: Young Professional Program
+                    </h3>
+                    <p class="status">
+                        Completed a career readiness program by Tata Consultancy Services.
+                    </p>
+                    <h4>Key Skills Gained:</h4>
+                    <ul class="skills-list">
+                        <li>Communication & Presentation Skills</li>
+                        <li>Resume Writing & Interview Preparation</li>
+                        <li>Soft Skills, Business Etiquette, Email Writing</li>
+                        <li>IT Fundamentals & Basics of AI</li>
+                        <li>Career Planning & Industry Readiness</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="section-title">
+            <h2>My <span>Education</span></h2>
+        </div>
+        <div class="education-container">
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class='bx bxs-graduation'></i>
+                </div>
+                <div class="education-content">
+                    <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2027</div>
+                    <h3>Guru Nanak Institutions</h3>
+                    <p>Computer Science And Engineering</p>
+                    <p>Hyderabad</p>
+                     <p><strong>Undergraduate</strong></p>
+                </div>
+            </div>
+
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class='bx bxs-school'></i>
+                </div>
+                <div class="education-content">
+                    <div class="year"><i class='bx bxs-calendar'></i> 2021 - 2023</div>
+                    <h3>Narayana College</h3>
+                    <p>Maths, Physics, and Chemistry</p>
+                    <p>Kurnool, Andhra Pradesh</p>
+                    <p><strong>GPA:</strong> 9.3</p>
+                </div>
+            </div>
+
+            <div class="education-card">
+                <div class="education-icon">
+                    <i class='bx bxs-school'></i>
+                </div>
+                <div class="education-content">
+                    <div class="year"><i class='bx bxs-calendar'></i> 2020 - 2021</div>
+                    <h3>Narayana School</h3>
+                    <p>SSC</p>
+                    <p>Dhone, Andhra Pradesh</p>
+                    <p><strong>GPA:</strong> 9.5</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email" required>
+                    <span class="focus"></span>
+                </div>
+                <span class="animate scroll" style="--i:3;"></span>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+                <span class="animate scroll" style="--i:5;"></span>
+            </div>
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+                <span class="animate scroll" style="--i:7;"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+                <span class="animate scroll" style="--i:9;"></span>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2023 Rakesh Babu Gajula. All Rights Reserved</p>
+            <span class="animate scroll" style="--i:1;"></span>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+            <span class="animate scroll" style="--i:3;"></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
